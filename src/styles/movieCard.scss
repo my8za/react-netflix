@@ -1,0 +1,29 @@
+.movie_slide {
+  display: flex;
+  align-items: center;
+}
+
+.movie_card {
+  width: 90%;
+  height: 180px;
+  background-size: cover;
+  transition: .1s;
+  &:hover {
+    position: absolute;
+    transform: scale(1.3); 
+    z-index: 99;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba($color: #999, $alpha: .4);
+    &:hover {
+      opacity: 1; 
+      transition: 
+        opacity .6s
+        background .2s;
+    }
+  }
+}

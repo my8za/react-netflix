@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# [Front] Mini Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## TMDB API를 활용하여 영화 OTT 서비스 만들기 (넷플릭스 st)
 
-## Available Scripts
+<img width={200} src='https://velog.velcdn.com/images/my8za/post/4ee412cd-ac67-4bdf-a7a1-f762fdd756c9/image.jpg' alt='netflix logo' />
 
-In the project directory, you can run:
+> 📌 **사용 API**: https://www.themoviedb.org/?language=ko <br>
+> 📌 **GitHub**: https://github.com/my8za <br>
+> 📌 **Velog**: https://velog.io/@my8za
 
-### `npm start`
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## [DEMO]()
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+데모페이지 준비중
 
-### `npm test`
+<br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 서비스 내용
 
-### `npm run build`
+> 카테고리별 영화 슬라이드 <br/>
+> 영화 상세정보 조회 <br/>
+> 연관 영화 추천 <br/>
+> 영화 검색 <br/>
+> 영화 정렬 <br/>
+> 영화 필터링 <br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 프로젝트 실행 방법
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. GNB 버튼을 클릭하여 원하는 페이지로 이동할 수 있습니다.
 
-### `npm run eject`
+### 2. 메인페이지
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- 배너
+- 카테고리별(인기있는 영화, 평점 높은 영화, 상영 예정작) 영화 슬라이드
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. 각 영화에 마우스를 올려두면 제목, 장르, 점수, 인기도, 청불여부 정보를 알 수 있음
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 4. 영화를 클릭하면, 해당 영화의 상세 페이지로 이동
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- 영화 상세 정보
+- 트레일러 영상
+- 영화 리뷰
+- 연관 영화 추천
 
-## Learn More
+### 5. 영화 검색
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 6. 영화 정렬
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 7. 영화 필터링
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br>

@@ -6,6 +6,11 @@ const store = configureStore({
     popular: slice,
     topRated: slice,
     upComing: slice,
+    genre: slice,
+    details: slice,
+    reviews: slice,
+    recommend: slice,
+    search: slice,
   },
   middleware: getDefaultMiddleware => 
   getDefaultMiddleware({
