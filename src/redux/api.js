@@ -27,31 +27,84 @@ API_URL.interceptors.response.use((resp) => {
 
 
 
-// popular 호출
+// 인기 상영작
 export const getPopular = createAsyncThunk(
   'get/popular',
   async () => {
     const resp = await API_URL.get(`/movie/popular?api_key=${API_KEY}&language=en-US&page=1`);
-      return resp.data;
+    return resp.data;
   }
 );
 
 
-// top rated 호출
+// 평점 높은 영화
 export const getTopRated = createAsyncThunk(
   'get/topRated',
   async () => {
     const resp = await API_URL.get(`/movie/top_rated?api_key=${API_KEY}&language=en-US&page=1`);
-      return resp.data;
+    return resp.data;
   }
 );
 
 
-// up coming 호출
+// 상영예정작
 export const getUpComing = createAsyncThunk(
   'get/upComing',
   async () => {
     const resp = await API_URL.get(`/movie/upcoming?api_key=${API_KEY}&language=en-US&page=1`);  
-      return resp.data;
+    return resp.data;
   }
 );
+
+
+
+// 영화 장르 리스트
+export const getGenreList = createAsyncThunk(
+  'get/genreList',
+  async () => {
+    const resp = await API_URL.get(`/genre/movie/list?api_key=${API_KEY}&language=en-US`);
+    return resp.data;
+  }
+)
+
+
+// 영화 상세정보
+export const getDetails = createAsyncThunk(
+  'get/details',
+  async (id) => {
+    const resp = await API_URL.get(`/movie/${id}?api_key=${API_KEY}&language=en-US`);
+    return resp.data;
+  }
+)
+
+
+// 영화 리뷰
+export const getReviews = createAsyncThunk(
+  'get/reviews',
+  async (id) => {
+    const resp = await API_URL.get(`/movie/${id}/reviews?api_key=${API_KEY}&language=en-US`);
+    return resp.data;
+  }
+)
+
+// 연관 영화 추천
+export const getRecommendations = createAsyncThunk(
+  'get/recommendations',
+  async (id) => {
+    const resp = await API_URL.get(`/movie/${id}/recommendations?api_key=${API_KEY}&language=en-US`);
+    return resp.data;
+  }
+)
+
+
+
+// 검색
+export const searchMovie = createAsyncThunk(
+  'get/search',
+  async (keyword) => {
+    console.log(keyword)
+    const resp = await API_URL.get(`/search/movie?api_key=${API_KEY}&query=${keyword}&language=en-US`);
+    console.log(resp.data)
+    return resp.data;
+  }
+)

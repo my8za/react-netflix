@@ -1,0 +1,13 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+
+  .loading_spinner {
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -6,11 +6,13 @@ import Page from '../page';
 import Home from '../page/Home';
 import Movies from '../page/Movies';
 import MovieDetail from '../page/MovieDetail';
+import ErrorPage from '../page/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Page />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',

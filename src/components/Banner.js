@@ -1,18 +1,18 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import '../styles/banner.scss';
 
-const Banner = () => {
-  const popularData = useSelector(state => state.popular.value[0].results);
-  console.log(popularData[0].poster_path)
+const Banner = ({ movie }) => {
   return (
     <div 
       className='banner'
       style={{backgroundImage: "url(" + 
-        `https://www.themoviedb.org/t/pw1930_and_h800_mulit_faces${popularData?.poster_path}`
+        `https://image.tmdb.org/t/p/w1920_and_h800_multi_faces${movie?.poster_path}`
         + ")", 
-
-      }}>
-      Banner
+    }}>
+      <div className='banner_info'>
+        <h2>{movie?.title}</h2>
+        <p>{movie?.overview}</p>
+      </div>
     </div>
   )
 }

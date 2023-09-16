@@ -1,0 +1,160 @@
+@import './sass/var';
+
+ul {padding: 0; margin: 0; list-style-type: none;}
+
+.detail {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 80px;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+.detail_wrap {
+  max-width: 1440px;
+
+  .contain_details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+
+    .bx_img {
+      width: 38%;
+      img {width: 100%;}
+    }
+    .bx_info {
+      width: 58%;  
+      
+      .bx_badge{}
+      .movie_title {font-size: 3.5rem; font-weight: 700;}
+      .tagline {font-size: 1.5rem; font-weight: 300;}
+      .summary1 {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        font-size: 1.2rem;
+
+        li {
+          padding-right: 20px;
+          .icon {margin-right: 10px;}
+
+          &:nth-child(1) .icon {color: yellow;}
+          &:nth-child(2) {
+            font-weight: 700;
+            .icon {color: rgba(255,255,255,.6);}
+          }
+          &:nth-child(3) {
+            color: $primaryColor;
+            font-weight: 700;
+            font-style: italic;
+            text-transform: uppercase;
+            .icon {color: grey;}
+          }
+        }
+      }
+      .overview {
+        padding: 15px 0;
+        font-size: 1.1rem;
+        &::before {
+          display: block;
+          width: 100%;
+          padding-bottom: 35px;
+          border-top: 2px solid rgba(255, 255, 255, .4);
+          content: '';
+        }
+        &::after {
+          display: block;
+          width: 100%;
+          padding-top: 35px;
+          border-bottom: 2px solid rgba(255, 255, 255, .4);
+          content: '';
+        }
+      }
+      .summary2 {
+        padding: 0;
+        li {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          font-size: .9rem;
+          span {
+            display: flex;
+            justify-content: center;
+            width: 120px;
+            margin-right: 25px;
+            padding: 5px 0;
+            box-sizing: border-box;
+            border-radius: 50px;
+            background: $primaryColor !important;
+            color: #000;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .trailer {
+        display: flex;
+        align-items: center;
+        padding-top: 10px ;
+        font-size: 1.2rem;
+        color: $primaryColor;
+        cursor: pointer;
+
+        .icon {margin-right: 5px; font-size: 1.5rem; color: $primaryColor}
+      }
+    }
+  }
+
+  .tab_menu {
+    margin-top: 80px;
+
+    button {
+      margin-right: 20px;
+      margin-bottom: 40px ;
+      padding: 12px 25px;
+      border: 0;
+      font-size: .9rem;
+      color: gray;
+      outline: none;
+      &.active {background-color: $primaryColor; color: #fff;}
+    }
+  }
+  .tab_content {
+    width: 100%;
+    padding: 50px 60px;
+    border: 3px solid #fff;
+
+    .bx_reviews {
+      padding: 0;
+      li {
+        &::after {
+          display: block;
+          width: 100%;
+          margin: 35px 0 ;
+          border-top: 2px solid rgba(255, 255, 255, .4);
+          content: '';
+        }
+        p { 
+          margin: 0;
+          span.author {
+            font-size: 2rem;
+            margin-right: 15px;
+          }
+          span:last-child {font-size: .8rem !important;}
+        }
+      }
+    }
+
+    .bx_recommedations {
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li {
+        width: 48%;
+        margin-bottom: 40px;
+        img {display: block; width: 100%;}
+      }
+    }
+  }
+}
