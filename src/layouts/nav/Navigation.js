@@ -12,7 +12,7 @@ function NavScrollExample() {
   const handleSearch = (e) => {
     if(e.keyCode === 13) {
       dispatch(searchMovie(keyword));
-      navigate(`/?q=${keyword}`);
+      navigate(`movies/?q=${keyword}`);
     }
   }
   return (
